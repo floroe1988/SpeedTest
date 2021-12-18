@@ -1,2 +1,2 @@
 def storeConnectionSpeed():
-    print("Hello from a function")
+    print("Connection speeds stored")
