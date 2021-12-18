@@ -1,2 +1,2 @@
 def getConnectionSpeed():
-    print("Hello from a function")
+    print("Connection speeds tested")
