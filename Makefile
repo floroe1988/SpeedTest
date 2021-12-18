@@ -5,8 +5,4 @@ install:
 lint:
     pylint --disable=R,C main.py
 
-format:
-
-test:
-
-all:
+all: install lint
