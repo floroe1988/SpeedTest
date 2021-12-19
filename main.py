@@ -1,5 +1,5 @@
-from src.GetConnectionSpeed import *
-from src.StoreConnectionSpeed import *
+from src.GetConnectionSpeed import getConnectionSpeed
+from src.StoreConnectionSpeed import storeConnectionSpeed
 
 def main():
 	getConnectionSpeed()
