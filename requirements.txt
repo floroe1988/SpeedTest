@@ -1,5 +1,6 @@
 # required for CI pipeline
 pylint
+black
 
 # required for app functionality
 speedtest-cli
