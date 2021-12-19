@@ -4,7 +4,7 @@ install:
 
 reformat:
 	black main.py
-	black /src
+	black src/
 
 lint:
 	pylint --disable=R,C main.py
