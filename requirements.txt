@@ -1,2 +1,5 @@
+# required for CI pipeline
 pylint
+
+# required for app functionality
 speedtest-cli
