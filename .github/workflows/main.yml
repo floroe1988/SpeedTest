@@ -29,6 +29,10 @@ jobs:
       - name: install
         run: make install
 
-    # Runs a single command using the runners shell
+      # Runs a single command using the runners shell
+      - name: reformat
+        run: make reformat
+        
+      # Runs a single command using the runners shell
       - name: lint
         run: make lint
