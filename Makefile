@@ -3,8 +3,8 @@ install:
 	pip install -r requirements.txt
 
 reformat:
-	black {main.py}
-	black {/src}
+	black main.py
+	black /src
 
 lint:
 	pylint --disable=R,C main.py
