@@ -1,2 +1,7 @@
+import speedtest
+
 def getConnectionSpeed():
-    print("Connection speeds tested")
+	s = speedtest.Speedtest()
+	print("My download speed is:", s.download())
+	print("My upload speed is:", s.upload())
+	print("Connection speeds tested")

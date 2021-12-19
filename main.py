@@ -1,5 +1,10 @@
+from src.GetConnectionSpeed import *
+from src.StoreConnectionSpeed import *
+
 def main():
-    print("Hello World!")
+	getConnectionSpeed()
+	storeConnectionSpeed()
+	print("done")
 
 if __name__ == "__main__":
     main()
