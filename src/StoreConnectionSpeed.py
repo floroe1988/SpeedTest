@@ -1,4 +1,3 @@
-import json
 import requests
 
 def storeConnectionSpeed():
@@ -18,4 +17,5 @@ def storeConnectionSpeed():
 
     response = requests.post(url, json=body)
 
+    print("response")
     print("Connection speeds stored")
