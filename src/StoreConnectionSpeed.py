@@ -5,8 +5,8 @@ def storeConnectionSpeed():
     url = 'https://maker.ifttt.com/trigger/{event_name}/with/key/{key}'
 
     value1 = 1
-	value2 = 2
-	value3 = 3
+    value2 = 2
+    value3 = 3
 
     body = {}
         if value1 is not None:
