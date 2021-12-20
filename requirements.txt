@@ -4,3 +4,4 @@ black
 
 # required for app functionality
 speedtest-cli
+requests
