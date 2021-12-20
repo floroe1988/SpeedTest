@@ -5,4 +5,4 @@ Python functionality to automate network speedtests and sync result to spread sh
 
 ## Setup environment
 * python3 -m venv ~/.YourEnvironmentName
-* source YourEnvironmentName/bin/activate
+* source ~/.YourEnvironmentName/bin/activate
