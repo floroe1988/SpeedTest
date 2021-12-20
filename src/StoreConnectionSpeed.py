@@ -15,7 +15,6 @@ def storeConnectionSpeed():
     if value3 is not None:
         body['value3'] = value3
 
-    response = requests.post(url, json=body)
+    requests.post(url, json=body)
 
-    print("response")
     print("Connection speeds stored")
