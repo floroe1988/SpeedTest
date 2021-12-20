@@ -9,12 +9,12 @@ def storeConnectionSpeed():
     value3 = 3
 
     body = {}
-        if value1 is not None:
-            body['value1'] = value1
-        if value2 is not None:
-            body['value2'] = value2
-        if value3 is not None:
-            body['value3'] = value3
+    if value1 is not None:
+        body['value1'] = value1
+    if value2 is not None:
+        body['value2'] = value2
+    if value3 is not None:
+        body['value3'] = value3
 
     response = requests.post(url, json=body)
 
