@@ -2,6 +2,17 @@ from datetime import datetime
 import speedtest
 
 def getConnectionSpeed():
+    '''
+    Performes speedtest for down- and upload speed. Result is stored together with 
+    the current date and time into a dictionary
+    
+    Return
+    ---------
+    result: dict
+        Dictionary conatianing the entries {date (str: dd/mm/YY)}, {time (str: H:M:S)},
+	{download (int: Mbit/s)} and {upload (int: Mbit/s)}
+    '''
+	
     # datetime object containing current date and time
     now = datetime.now()
 	
@@ -13,8 +24,8 @@ def getConnectionSpeed():
 
     # performing speedtest
     s = speedtest.Speedtest()
-    download = int((s.download()/1048576))
-    upload = int((s.upload()/1048576))
+    download = int((s.download()/1048576))	# convert bit/s to Mbit/s
+    upload = int((s.upload()/1048576))		# convert bit/s to Mbit/s
 
     # write speedtest result to output data
     result = {}
@@ -22,6 +33,5 @@ def getConnectionSpeed():
     result['time'] = time
     result['download'] = download
     result['upload'] = upload
-    print("Connection speeds tested")
 
     return(result)
