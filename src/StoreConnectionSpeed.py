@@ -1,4 +1,3 @@
-import json
 import requests
 
 def storeConnectionSpeed():
@@ -10,14 +9,10 @@ def storeConnectionSpeed():
     value4 = 4
 
     body = {}
-    if value1 is not None:
-        body['date'] = value1
-    if value2 is not None:
-        body['time'] = value2
-    if value3 is not None:
-        body['download'] = value3
-    if value4 is not None:
-        body['upload'] = value4
+    body['date'] = value1
+    body['time'] = value2
+    body['download'] = value3
+    body['upload'] = value4
 
     response = requests.post(url, json=body)
     
