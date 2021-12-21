@@ -4,5 +4,5 @@
 Python functionality to automate network speedtests and sync result to spread sheet
 
 ## Setup environment
-* python3 -m venv ~/.YourEnvironmentName
-* source ~/.YourEnvironmentName/bin/activate
+* python3 -m venv ~/.SpeedTest
+* source ~/.SpeedTest/bin/activate
