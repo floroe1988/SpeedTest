@@ -13,8 +13,8 @@ def getConnectionSpeed():
 
     # performing speedtest
     s = speedtest.Speedtest()
-    download = (s.download()/1048576)
-    upload = (s.upload()/1048576)
+    download = int((s.download()/1048576))
+    upload = int((s.upload()/1048576))
 
     # write speedtest result to output data
     result = {}
