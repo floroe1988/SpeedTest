@@ -5,10 +5,10 @@ def getConnectionSpeed():
     # datetime object containing current date and time
     now = datetime.now()
 	
-	# dd/mm/YY
+    # dd/mm/YY
     date = now.strftime("%d/%m/%Y")
 	
-	# H:M:S
+    # H:M:S
     time = now.strftime("%H:%M:%S")
 
     # performing speedtest
