@@ -2,8 +2,8 @@ from src.GetConnectionSpeed import getConnectionSpeed
 from src.StoreConnectionSpeed import storeConnectionSpeed
 
 def main():
-    getConnectionSpeed()
-    storeConnectionSpeed()
+    result = getConnectionSpeed()
+    storeConnectionSpeed(result)
     print("all done")
 
 if __name__ == "__main__":
