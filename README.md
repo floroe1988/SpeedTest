@@ -1,7 +1,8 @@
 [![CI](https://github.com/floroe1988/SpeedTest/actions/workflows/main.yml/badge.svg)](https://github.com/floroe1988/SpeedTest/actions/workflows/main.yml)
 
 # SpeedTest
-Python functionality to automate cyclical network speedtests and sync result to spread sheet
+Python functionality to automate cyclical network speedtests and sync result to google
+spread sheet
 
 ## Setup Edge Device
 First setup a virtual environment where the applcation can live in and source it
@@ -24,6 +25,11 @@ As resulting action configure "write to google sheet" (the entries for the forma
 matter, as these will be overwritten by the filter code which will be applied later)
 
 Apply the following filter code to the IFTTT template
+```
+let payload = JSON.parse(MakerWebhooks.jsonEvent.JsonPayload)
+let formattedRow = `${payload.date}|||${payload.time}|||${payload.download}|||${payload.upload}`
+GoogleSheets.appendToGoogleSpreadsheet.setFormattedRow(formattedRow)
+```
 
 ## Running the application
 To start the applikation on the edge device, run the following command
