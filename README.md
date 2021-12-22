@@ -6,15 +6,17 @@ spread sheet
 
 ## Setup IFTTT
 To store the results of the speedtest a corresponding webhook template has to be created 
-inside IFTTT
+inside IFTTT.
 To do so, first create a new template with a "webhook" containing a json payload as trigger
 ![IFTTT Trigger](docs/Trigger.png)
 
-As resulting action configure "write to google sheet" (the entries for the formatting do not
-matter, as these will be overwritten by the filter code which will be applied later)
+As resulting action configure a "add row to spreadsheet" action (the entries for the
+formatting do not matter, as these will be overwritten by the filter code which will
+be applied later)
 ![IFTTT Action](docs/Action.png)
 
-Apply the following filter code to the IFTTT template
+Apply the following filter code to the IFTTT template. This filter code is required to 
+have the json payload written into the spreadsheet in a structured manner.
 ![IFTTT FilterCoce](docs/FilterCode.png)
 ```
 let payload = JSON.parse(MakerWebhooks.jsonEvent.JsonPayload)
