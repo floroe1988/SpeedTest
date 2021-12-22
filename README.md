@@ -6,7 +6,7 @@ spread sheet
 
 ## Setup IFTTT
 To store the results of the speedtest a corresponding webhook template has to be created 
-inside IFTTT.
+inside IFTTT.  
 To do so, first create a new template with a "webhook" containing a json payload as trigger
 ![IFTTT Trigger](docs/Trigger.png)
 
@@ -31,7 +31,7 @@ git clone https://github.com/floroe1988/SpeedTest.git
 ```
 
 To make the application work with the IFTTT webhook some changes are required
-inside the file [`storeConnectionSpeed`](https://github.com/floroe1988/SpeedTest/blob/main/src/StoreConnectionSpeed.py)
+inside the file [`storeConnectionSpeed`](https://github.com/floroe1988/SpeedTest/blob/main/src/StoreConnectionSpeed.py)  
 Inside the file the element {event_name} inside the url has to be changed to the event name
 specified inside the IFTTT remplate. Additionally the element {key} has to be replaced with 
 the presonal access key privided for the respective IFTTT account.
