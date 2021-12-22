@@ -7,7 +7,7 @@ spread sheet
 ## Setup Edge Device
 Clone repository to your local device
 ```
-git clone 
+git clone https://github.com/floroe1988/SpeedTest.git
 ```
 
 Setup a virtual environment where the applcation can live in and source it
