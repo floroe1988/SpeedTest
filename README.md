@@ -4,23 +4,6 @@
 Python functionality to automate cyclical network speedtests and sync result to google
 spread sheet
 
-## Setup Edge Device
-Clone repository to your local device
-```
-git clone https://github.com/floroe1988/SpeedTest.git
-```
-
-Setup a virtual environment where the applcation can live in and source it
-```
-python3 -m venv ~/.SpeedTest
-source ~/.SpeedTest/bin/activate
-```
-
-cd into the cloned directory and run the following commant
-```
-make install
-```
-
 ## Setup IFTTT
 To store the results of the speedtest a corresponding webhook template has to be created 
 inside IFTTT
@@ -37,6 +20,26 @@ Apply the following filter code to the IFTTT template
 let payload = JSON.parse(MakerWebhooks.jsonEvent.JsonPayload)
 let formattedRow = `${payload.date}|||${payload.time}|||${payload.download}|||${payload.upload}`
 GoogleSheets.appendToGoogleSpreadsheet.setFormattedRow(formattedRow)
+```
+
+## Setup Edge Device
+Clone repository to your local device
+```
+git clone https://github.com/floroe1988/SpeedTest.git
+```
+
+To make the application work with the IFTTT webhook some changes are required
+inside the file [`.storeConnectionSpeed`](https://github.com/floroe1988/SpeedTest/src/StoreConnectionSpeed)
+
+Setup a virtual environment where the applcation can live in and source it
+```
+python3 -m venv ~/.SpeedTest
+source ~/.SpeedTest/bin/activate
+```
+
+cd into the cloned directory and run the following commant
+```
+make install
 ```
 
 ## Running the application
