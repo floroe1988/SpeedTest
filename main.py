@@ -1,5 +1,5 @@
 import time
-from GetConnectionSpeed import getConnectionSpeed
+from src.GetConnectionSpeed import getConnectionSpeed
 from src.StoreConnectionSpeed import storeConnectionSpeed
 
 def main():
