@@ -5,13 +5,18 @@ Python functionality to automate cyclical network speedtests and sync result to 
 spread sheet
 
 ## Setup Edge Device
-First setup a virtual environment where the applcation can live in and source it
+Clone repository to your local device
+```
+git clone 
+```
+
+Setup a virtual environment where the applcation can live in and source it
 ```
 python3 -m venv ~/.SpeedTest
 source ~/.SpeedTest/bin/activate
 ```
 
-cd into the working directory and run the following commant
+cd into the cloned directory and run the following commant
 ```
 make install
 ```
