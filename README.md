@@ -29,7 +29,7 @@ git clone https://github.com/floroe1988/SpeedTest.git
 ```
 
 To make the application work with the IFTTT webhook some changes are required
-inside the file [`.storeConnectionSpeed`](https://github.com/floroe1988/SpeedTest/src/StoreConnectionSpeed)
+inside the file [`storeConnectionSpeed`](https://github.com/floroe1988/SpeedTest/src/StoreConnectionSpeed)
 
 Setup a virtual environment where the applcation can live in and source it
 ```
