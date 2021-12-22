@@ -1,4 +1,5 @@
-from src.GetConnectionSpeed import getConnectionSpeed
+import time
+from GetConnectionSpeed import getConnectionSpeed
 from src.StoreConnectionSpeed import storeConnectionSpeed
 
 def main():
@@ -14,3 +15,4 @@ def main():
 if __name__ == "__main__":
     while True:
         main()
+        time.sleep(600)
