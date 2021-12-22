@@ -25,9 +25,11 @@ make install
 To store the results of the speedtest a corresponding webhook template has to be created 
 inside IFTTT
 To do so, first create a new template with a "webhook" containing a json payload as trigger
+![IFTTT Trigger](docs/Trigger.png)
 
 As resulting action configure "write to google sheet" (the entries for the formatting do not
 matter, as these will be overwritten by the filter code which will be applied later)
+![IFTTT Action](docs/Action.png)
 
 Apply the following filter code to the IFTTT template
 ![IFTTT FilterCoce](docs/FilterCode.png)
