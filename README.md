@@ -30,6 +30,10 @@ git clone https://github.com/floroe1988/SpeedTest.git
 
 To make the application work with the IFTTT webhook some changes are required
 inside the file [`storeConnectionSpeed`](https://github.com/floroe1988/SpeedTest/blob/main/src/StoreConnectionSpeed.py)
+Inside the file the element {event_name} inside the url has to be changed to the event name
+specified inside the IFTTT remplate. Additionally the element {key} has to be replaced with 
+the presonal access key privided for the respective IFTTT account.
+![Python FileConfig](docs/FileConfig.png)
 
 Setup a virtual environment where the applcation can live in and source it
 ```
