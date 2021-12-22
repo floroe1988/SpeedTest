@@ -15,7 +15,7 @@ def storeConnectionSpeed(payload):
             {download (int)} and {upload (int)}
     '''
     
-    # define ifttt webhock url
+    # define ifttt webhook url
     url = 'https://maker.ifttt.com/trigger/{event_name}/json/with/key/{key}'
 
     # api call to ifttt webhook
