@@ -12,4 +12,5 @@ def main():
     storeConnectionSpeed(result)
 
 if __name__ == "__main__":
-    main()
+    while True:
+        main()
