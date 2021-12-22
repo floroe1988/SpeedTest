@@ -11,4 +11,4 @@ lint:
 	pylint --disable=R,C src/GetConnectionSpeed.py
 	pylint --disable=R,C src/StoreConnectionSpeed.py
 
-all: install lint
+all: install lint reformat
