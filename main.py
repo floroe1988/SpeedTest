@@ -10,7 +10,7 @@ def main():
     '''
     
     result = getConnectionSpeed()
-    response = storeConnectionSpeed(result)
+    storeConnectionSpeed(result)
 
 if __name__ == "__main__":
     while True:
