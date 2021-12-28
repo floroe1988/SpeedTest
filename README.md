@@ -51,7 +51,7 @@ make install
 ## Running the application
 To start the applikation on the edge device, run the following command
 ```
-python main.py
+python3 main.py
 ```
 
 Once the application is running it will perform a speedtest every 10 minutes and store the result
