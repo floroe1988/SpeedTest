@@ -56,4 +56,4 @@ python3 main.py
 
 Once the application is running it will perform a speedtest every 10 minutes and store the result
 inside the google spreadsheet which is defined in the IFTTT template. The result contains the 
-current date and time as well as the download and uplaod speed.
+current date and time as well as the download and upload speed.
