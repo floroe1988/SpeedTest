@@ -9,10 +9,11 @@ def main():
     via an ifttt webhook
     '''
     
-    result = getConnectionSpeed()
-    storeConnectionSpeed(result)
+    while True:
+        result = getConnectionSpeed()
+        storeConnectionSpeed(result)
+        time.sleep(600)
 
 if __name__ == "__main__":
-    while True:
-        main()
-        time.sleep(600)
+    main()
+        
